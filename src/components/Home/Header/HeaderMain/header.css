@@ -1,0 +1,29 @@
+body{
+    background-color: #f9f9f9;
+}
+.header-bg{
+    background-image: url('https://cdn.pixabay.com/photo/2015/11/09/14/43/laptop-1035345__340.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
+}
+.overlay{
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, .9);
+}
+.header-title{
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+}
+.header-des{
+    line-height: 10px;
+    color: white;
+}
+.top-content{
+    margin-top: 8rem !important;
+}
