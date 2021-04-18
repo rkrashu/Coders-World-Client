@@ -1,13 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './dashboardSidebar.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCog, faSignOutAlt, faCalendar, faHome, faGripHorizontal, faUserPlus, faUsers } from '@fortawesome/free-solid-svg-icons';
-import { faFileAlt } from '@fortawesome/free-regular-svg-icons'
 import { userContext } from '../../../App';
 
 const DashboardSidebar = () => {
-    const [loggedInUser, setLoggedInUser] = useContext(userContext)
+    const [loggedInUser] = useContext(userContext)
     const [adminEmail, setAdminEmail] = useState({})
 
     useEffect(()=>{
@@ -15,8 +12,6 @@ const DashboardSidebar = () => {
         .then(res => res.json())
         .then(res => setAdminEmail(res))
     },[loggedInUser.email])
-
-    console.log(adminEmail.email)
 
     if (loggedInUser.email === adminEmail.email) {
         return (
@@ -52,7 +47,7 @@ const DashboardSidebar = () => {
                 <ul className="list-unstyled">
                 <li>
                     <Link to="/buyCourse" className="text-white">
-                        Buy Course
+                        Place Order
                     </Link>
                 </li>
                 <li>

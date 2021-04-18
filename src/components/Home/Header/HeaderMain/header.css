@@ -7,10 +7,10 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    height: 500px;
+    height: 100vh;
 }
 .overlay{
-    height: 500px;
+    height: 100vh;
     width: 100%;
     position: absolute;
     background: rgba(0, 0, 0, .9);
@@ -25,5 +25,5 @@ body{
     color: white;
 }
 .top-content{
-    margin-top: 8rem !important;
+    margin-top: 12rem !important;
 }

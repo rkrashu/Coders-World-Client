@@ -10,7 +10,7 @@ const Dashboard = () => {
                     <div className='col-md-2'>
                         <DashboardSidebar></DashboardSidebar>
                     </div>
-                    <div className='col-md-10 d-flex justify-content-center align-items-center'>
+                    <div style={{marginTop:'250px'}} className='col-md-10 text-center'>
                         <h2>Welcome to Dashboard</h2>
                     </div>
 

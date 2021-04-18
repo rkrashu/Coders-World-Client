@@ -12,10 +12,10 @@ const Courses = () => {
   }, [])
     return (
         <div>
-            <div className='mb-3 d-flex align-items-center justify-content-center'>
-                <h2 className='text-info'>Courses</h2>
+            <div className='mb-3 d-flex align-items-center justify-content-center my-5 py-5'>
+                <h2 className='text-info'>Our Courses</h2>
             </div>
-            <div className='row'>
+            <div className='row px-3'>
                 {
                     courses.map(course => <Course course={course}></Course>)
                 }

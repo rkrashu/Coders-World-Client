@@ -12,11 +12,12 @@ const Reviews = () => {
             .then(data => setReviews(data))
     }, [])
     return (
-        <div className='my-5'>
-            <div className='my-5 d-flex align-items-center justify-content-center'>
+        <div className='my-5 py-4'>
+            <div className='my-5 text-center'>
                 <h2 className='text-info'>Review</h2>
+                <h6 className='text-secondary'>What our users say about us</h6>
             </div>
-            <div className='row'>
+            <div className='row px-3'>
                 {
                     reviews.map(review => <Review review={review}></Review>)
                 }

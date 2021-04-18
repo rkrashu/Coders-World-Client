@@ -25,17 +25,17 @@ const OrderList = () => {
         <table class="table">
   <thead>
     <tr>
+      <th scope="col">#</th>
       <th scope="col">Name</th>
       <th scope="col">Email</th>
       <th scope="col">Phone</th>
       <th scope="col">Course Name</th>
       <th scope="col">Price</th>
-      <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
   {
-      orderData.map(order => <Order order={order}></Order>)
+      orderData.map((order, index) => <Order order={order} index={index}></Order>)
   }
   </tbody>
 </table>

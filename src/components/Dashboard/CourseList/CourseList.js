@@ -26,6 +26,7 @@ const CourseList = () => {
           <table class="table">
             <thead>
               <tr>
+              <th scope="col">#</th>
                 <th scope="col">Email</th>
                 <th scope="col">Course Name</th>
                 <th scope="col">Price</th>
@@ -33,7 +34,7 @@ const CourseList = () => {
             </thead>
             <tbody>
               {
-                courseList.map(course => <CourseData course={course}></CourseData>)
+                courseList.map((course, index) => <CourseData course={course} index={index}></CourseData>)
               }
             </tbody>
           </table>

@@ -1,0 +1,22 @@
+.footer-bg{
+    background-color: rgb(7, 5, 5);
+    background-size: cover;
+    position: relative;
+}
+.footer-main{
+    padding-top: 120px;
+}
+.support-text li {
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.support-text Link li {
+    text-decoration: none;
+    margin-top: 5px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
