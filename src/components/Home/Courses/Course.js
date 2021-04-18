@@ -12,10 +12,11 @@ const Course = ({course}) => {
                     <div className="col-md-9">
                         <h5 className='text-primary'>{course.name}</h5>
                         <h6 className='text-secondary'>{course.duration}</h6>
+                        <h6><small>${course.price}</small></h6>
                     </div>
                 </div>
                 <p>{course.details}</p>
-                <Link to={"/checkout/"+ course._id}><button className='btn btn-primary'> Buy Now</button></Link>
+                    <Link to={"/checkout/"+ course._id}><button className='btn btn-primary'> Buy Now</button></Link>     
             </div>
         </div>
     );
